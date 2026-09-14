@@ -1,0 +1,32 @@
+name: "Release 🚀"
+# https://git-cliff.org — release notes generated from Conventional Commits
+
+on:
+  push:
+    tags: [ "v*" ]
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: GitHub Release 📦
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate release notes
+        uses: orhunp/git-cliff-action@v4
+        id: cliff
+        with:
+          config: cliff.toml
+          args: --latest --strip header
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          body: ${{ steps.cliff.outputs.content }}
+          generate_release_notes: false

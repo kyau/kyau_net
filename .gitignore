@@ -1,3 +1,17 @@
 # Visual Studio cache directory
 */.vs/
 .vs/
+
+# PHP / Composer
+/vendor/
+composer.phar
+.phpunit.result.cache
+.php-cs-fixer.cache
+/.phpunit.cache/
+/build/
+
+# Node
+/node_modules/
+
+# Pi project packages
+/.pi/npm/

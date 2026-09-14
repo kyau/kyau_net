@@ -121,6 +121,48 @@ const enableTilt = () => {
 enableTilt();
 
 /* -------------------------------------------------------------------------
+ * Metric count-up ([data-count] elements, e.g. the VSI verified-specs
+ * panel). Static final value without JS; animates from zero when the
+ * element scrolls into view and motion is allowed.
+ * ------------------------------------------------------------------------- */
+const counters = document.querySelectorAll("[data-count]");
+
+if (counters.length && !reducedMotion.matches) {
+	const countUp = (el) => {
+		const target = parseInt(el.dataset.count, 10);
+		if (!Number.isFinite(target)) {
+			return;
+		}
+		const duration = 1400;
+		let start = 0;
+		const step = (now) => {
+			if (!start) {
+				start = now;
+			}
+			const t = Math.min(1, (now - start) / duration);
+			el.textContent = String(Math.round(target * (1 - Math.pow(1 - t, 3))));
+			if (t < 1) {
+				window.requestAnimationFrame(step);
+			}
+		};
+		window.requestAnimationFrame(step);
+	};
+	if ("IntersectionObserver" in window) {
+		const counterObserver = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					counterObserver.unobserve(entry.target);
+					countUp(entry.target);
+				}
+			});
+		}, { threshold: 0.4 });
+		counters.forEach((el) => counterObserver.observe(el));
+	} else {
+		counters.forEach(countUp);
+	}
+}
+
+/* -------------------------------------------------------------------------
  * Deck navigation: any scroll input swaps almost immediately to the next
  * section in that direction (wheel / touch swipe / arrow & page keys).
  * A short deckLock cooldown prevents double-firing mid-animation.

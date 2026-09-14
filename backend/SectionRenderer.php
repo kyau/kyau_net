@@ -15,7 +15,8 @@ use RuntimeException;
  * themed after the live site it showcases — including its real logo and
  * bespoke decorative CSS art (aria-hidden): floating hexagons for KYAU
  * Labs, a HUD + WebGL constellation canvas for Prism, a Linux terminal
- * displaying genuine voidBBS ANSI graphics, and a diagnostic gauge for VSI.
+ * displaying genuine voidBBS ANSI graphics, and the live site's
+ * verified-specs metric for VSI.
  */
 final class SectionRenderer
 {
@@ -132,16 +133,12 @@ HTML;
 HTML,
             // voidBBS — a Linux terminal displaying a real ANSI graphic (random on each load)
             'voidbbs' => $this->voidTerminal(),
-            // VSI — diagnostic gauge over carbon fiber
+            // VSI — the live site's sunburst-center metric: total verified specs
             'vsi' => <<<'HTML'
-                    <div class="diag">
-                        <div class="diag__gauge"><span class="diag__needle"></span></div>
-                        <div class="diag__chips">
-                            <span class="diag__chip diag__chip--alert">VTEC</span>
-                            <span class="diag__chip">OBD-II</span>
-                            <span class="diag__chip diag__chip--alert">SVC DUE</span>
-                            <span class="diag__chip">K20C1</span>
-                        </div>
+                    <div class="metric">
+                        <span class="metric__value" data-count="403">403</span>
+                        <span class="metric__label">Verified Specs</span>
+                        <span class="metric__sub">Honda &amp; Acura specification rows</span>
                     </div>
 HTML,
             default => throw new RuntimeException("No art defined for project '{$id}'."),

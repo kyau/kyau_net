@@ -83,7 +83,7 @@ describe('SectionRenderer', function () {
         expect($renderer->render(sampleProject('kyaulabs'), 0))->toContain('hexfield')
             ->and($renderer->render(sampleProject('prism'), 1))->toContain('id="prism-net"')
             ->and($renderer->render(sampleProject('voidbbs'), 2))->toContain('term__ansi')
-            ->and($renderer->render(sampleProject('vsi'), 3))->toContain('diag__gauge');
+            ->and($renderer->render(sampleProject('vsi'), 3))->toContain('metric__value');
     });
 
     test('kyau labs omits the empty art cell entirely', function () {
@@ -162,6 +162,16 @@ describe('SectionRenderer', function () {
         $html = (new SectionRenderer())->render(sampleProject(), 0);
 
         expect($html)->toContain('aria-hidden="true"');
+    });
+
+    test('vsi art is the verified-specs metric from the live site, not a gauge replica', function () {
+        $html = (new SectionRenderer())->render(sampleProject('vsi'), 3);
+
+        expect($html)->toContain('class="metric"')
+            ->toContain('data-count="403"')
+            ->toContain('>403<')
+            ->toContain('Verified Specs')
+            ->not->toContain('diag');
     });
 
     test('rejects a project id with no bespoke art', function () {

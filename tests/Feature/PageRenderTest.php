@@ -162,6 +162,20 @@ describe('Front page (rendered through Aurora)', function () {
             ->toMatch('/login:\s*<span class="term__cursor"/');
     });
 
+    test('vsi panel shows the verified-specs metric from the live site', function () {
+        $html = renderPage();
+
+        expect($html)->toContain('class="metric"')
+            ->toContain('data-count="403"')
+            ->toContain('>403<')
+            ->toContain('Verified Specs')
+            ->not->toContain('diag__gauge');
+
+        $scss = file_get_contents(__DIR__ . '/../../cdn/sass/site.scss');
+        expect($scss)->toMatch('/\.metric__value\s*{[^}]*clamp\(/')
+            ->not->toContain('needle-sweep');
+    });
+
     test('vsi tagline renders a real apostrophe, not a unicode escape', function () {
         $html = renderPage();
 
@@ -291,11 +305,16 @@ describe('Stylesheet (WCAG & motion safety)', function () {
             ->toMatch('/\.site-header__logo\s*{[^}]*height:\s*2\.5rem/');
     });
 
-    test('vsi panel has the blueprint grid and lightning accents', function () {
+    test('vsi panel has the blueprint grid and prevalent lightning accents', function () {
         $scss = file_get_contents(__DIR__ . '/../../cdn/sass/site.scss');
 
         expect($scss)->toMatch('/\.panel--vsi::before\s*{[^}]*background-size:\s*36px 36px/')
-            ->toContain('bolt');
+            ->toContain('bolt')
+            // multi-pulse strikes: ~0.5s of flicker every 7s/11s, not a
+            // single 0.3s blip that reads as a monitor glitch
+            ->toMatch('/\.bolt--left\s*{[^}]*animation:\s*bolt-flash 7s/')
+            ->toMatch('/\.bolt--right\s*{[^}]*animation:\s*bolt-flash 11s/')
+            ->toMatch('/@keyframes bolt-flash\s*{[\s\S]*0%,\s*80%,\s*88%,\s*100%\s*{\s*opacity:\s*0/');
     });
 
     test('provides visible keyboard focus styles', function () {
@@ -372,6 +391,12 @@ describe('Site script (progressive enhancement)', function () {
         $js = file_get_contents(__DIR__ . '/../../cdn/js/site.js');
 
         expect($js)->toContain('site-header--scrolled');
+    });
+
+    test('counts up the vsi metric when motion is allowed', function () {
+        $js = file_get_contents(__DIR__ . '/../../cdn/js/site.js');
+
+        expect($js)->toContain('data-count');
     });
 
     test('deck navigation covers wheel, touch and keyboard', function () {

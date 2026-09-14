@@ -22,6 +22,7 @@ Source for [kyau.net](https://kyau.net/), the personal website of KYAU Labs.
 
 ## Stack
 
+- Framework: [Aurora](https://github.com/kyaulabs/aurora) (`aurora/` git submodule)
 - Backend: PHP 8.5+ (Composer)
 - Tests: Pest 5 / PHPUnit 13
 - Style: PHP CS Fixer
@@ -38,6 +39,7 @@ Source for [kyau.net](https://kyau.net/), the personal website of KYAU Labs.
 ### Install
 
 ```text
+git clone --recurse-submodules git@github.com:kyau/kyau_net
 composer install
 ```
 

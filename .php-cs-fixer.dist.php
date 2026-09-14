@@ -5,9 +5,11 @@ declare(strict_types=1);
 $finder = PhpCsFixer\Finder::create()
     ->in([
         __DIR__ . '/backend',
+        __DIR__ . '/public',
         __DIR__ . '/tests',
     ])
-    ->name('*.php');
+    ->name('*.php')
+    ->append([__DIR__ . '/index.php']);
 
 return (new PhpCsFixer\Config())
     ->setRiskyAllowed(true)

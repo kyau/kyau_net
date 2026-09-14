@@ -98,12 +98,21 @@ describe('SectionRenderer', function () {
         $seen = [];
         for ($i = 0; $i < 40; $i++) {
             $html = $renderer->render(sampleProject('voidbbs'), 2);
-            expect($html)->toMatch('/\/cdn\/img\/void-(login|header-alt1|header-alt2)\.png/');
-            preg_match('/void-(login|header-alt1|header-alt2)\.png/', $html, $m);
+            expect($html)->toMatch('/\/cdn\/img\/void-header-alt[12]\.png/');
+            preg_match('/void-(header-alt[12])\.png/', $html, $m);
             $seen[$m[1]] = true;
         }
-        // 40 rolls should surface at least two distinct graphics
-        expect(count($seen))->toBeGreaterThanOrEqual(2);
+        // 40 rolls should surface both graphics
+        expect(count($seen))->toBe(2);
+    });
+
+    test('the failed telnet login capture is retired', function () {
+        // void-login.png was rendered from a telnet capture with broken
+        // colors; only the converted ANSI site headers may be used
+        expect(file_exists(__DIR__ . '/../../cdn/img/void-login.png'))->toBeFalse();
+
+        $html = (new SectionRenderer())->render(sampleProject('voidbbs'), 2);
+        expect($html)->not->toContain('void-login');
     });
 
     test('void terminal shows users online and a tabbed login prompt', function () {

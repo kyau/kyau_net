@@ -122,7 +122,8 @@ describe('Front page (rendered through Aurora)', function () {
         expect($html)->toContain('/cdn/img/kyaulabs-logo.svg')
             ->toContain('/cdn/img/prism-logo.png')
             ->toContain('/cdn/img/vsi-logo.svg')
-            ->toMatch('/\/cdn\/img\/void-(login|header-alt1|header-alt2)\.png/');
+            ->toMatch('/\/cdn\/img\/void-header-alt[12]\.png/')
+            ->not->toContain('void-login');
     });
 
     test('site chrome uses the KYAU brand assets', function () {

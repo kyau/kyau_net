@@ -20,11 +20,10 @@ use RuntimeException;
  */
 final class SectionRenderer
 {
-    /** @var list<string> Real ANSI graphics captured from / used by voidBBS */
+    /** @var list<string> Genuine voidBBS ANSI graphics, converted ANSI -> PNG */
     private const VOID_ART = [
-        '/cdn/img/void-login.png',       // the actual login screen, captured live over telnet
-        '/cdn/img/void-header-alt1.png', // site header, ANSI -> PNG
-        '/cdn/img/void-header-alt2.png', // site header, ANSI -> PNG
+        '/cdn/img/void-header-alt1.png', // site header
+        '/cdn/img/void-header-alt2.png', // site header
     ];
 
     /**

@@ -1,0 +1,71 @@
+name: "CI 🔍"
+
+on:
+  push:
+    branches: [ "develop", "main" ]
+  pull_request:
+    branches: [ "develop", "main" ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Lint & Test 🧪
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.5"
+          coverage: pcov
+          tools: composer:v2
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: PHP syntax lint
+        run: composer lint
+
+      - name: PHP CS Fixer (dry-run)
+        run: composer format:check
+
+      - name: Pest
+        id: pest
+        run: |
+          if find tests -name '*Test.php' -print -quit | grep -q .; then
+            composer coverage
+          else
+            echo "No tests found; skipping Pest run."
+          fi
+
+      - name: Coverage gate on changed files
+        if: github.event_name == 'pull_request'
+        run: |
+          if [ -f build/clover.xml ]; then
+            git fetch origin ${{ github.base_ref }} --depth=1
+            git diff --name-only origin/${{ github.base_ref }}...HEAD -- '*.php' \
+              | php .github/scripts/coverage-gate.php build/clover.xml --min=90
+          else
+            echo "No coverage report; skipping gate."
+          fi
+
+  secrets:
+    name: Gitleaks 🔒
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

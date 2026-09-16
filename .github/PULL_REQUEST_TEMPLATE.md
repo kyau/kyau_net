@@ -1,7 +1,7 @@
-<!--
+<!-- 
   This template helps you structure your PR description.
-  Replace the placeholder text (in angle brackets like <...>)
-  with your own details. Comments like this one are hidden
+  Replace the placeholder text (in angle brackets like <...>) 
+  with your own details. Comments like this one are hidden 
   from the final PR description.
 -->
 
@@ -44,8 +44,8 @@
 ## ✅ Verification
 
 <!--
-  Summarize how you validated the changes.
-  Include results from automated checks (linters, tests, coverage)
+  Summarize how you validated the changes. 
+  Include results from automated checks (linters, tests, coverage) 
   and any manual verification steps.
   Example:
   | Gate | Result |
@@ -78,7 +78,7 @@
 ## 🧪 Test Plan
 
 <!--
-  Provide a clear, step‑by‑step list of commands or actions
+  Provide a clear, step‑by‑step list of commands or actions 
   a reviewer can run to verify your changes work as expected.
   Use bullet points with code blocks if needed.
   Example:

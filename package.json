@@ -1,0 +1,18 @@
+{
+    "name": "kyau-net",
+    "private": true,
+    "scripts": {
+        "build": "pnpm run build:css && pnpm run build:js",
+        "build:css": "sass --style=compressed --no-source-map cdn/sass/site.scss cdn/css/site.min.css",
+        "build:js": "terser cdn/js/site.js --compress --mangle --output cdn/javascript/site.min.js && terser cdn/js/fx.js --compress --mangle --module --output cdn/javascript/fx.min.js",
+        "lint:scss": "stylelint \"cdn/sass/**/*.scss\" --allow-empty-input"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^21.2.2",
+        "@commitlint/config-conventional": "^21.2.2",
+        "sass": "^1",
+        "stylelint": "^17",
+        "stylelint-config-standard-scss": "^17",
+        "terser": "^5"
+    }
+}

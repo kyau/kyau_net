@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1240" viewBox="0 0 1440 1240"><title>KYAU — Folded Ribbon / カイヨ</title>
+<rect width="1440" height="1240" fill="#F5F3F0"/>
+<text x="64" y="55" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">KYAU</text>
+<text x="1170" y="55" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">IDENTITY / 02</text>
+<path stroke="#CFD0D7" d="M64 82H1376"/>
+<text x="64" y="133" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">FOLDED RIBBON / CUSTOM LETTERFORMS</text>
+<g id="primary-light-lockup" transform="translate(120 142) scale(1.32)"><defs><linearGradient id="board-day-main" gradientUnits="userSpaceOnUse" x1="60" y1="290" x2="280" y2="60"><stop stop-color="#2444D8"/><stop offset="1" stop-color="#096A96"/></linearGradient><linearGradient id="board-day-tail" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B91379"/><stop offset="1" stop-color="#E2248A"/></linearGradient></defs><g transform="translate(-7 28) scale(1.06 .88)"><g id="board-day-folded-knot" fill-rule="evenodd">
+ <path fill="url(#board-day-main)" d="M22 181L134 49L246 181L134 313Z M84 181L134 122L184 181L134 240Z"/>
+ <path fill="url(#board-day-tail)" d="M114 181L226 49L338 181L226 313Z M184 181L226 122L276 181L226 240Z"/>
+ <path fill="url(#board-day-main)" d="M134 49L246 181H184L134 122L103 85Z"/>
+ <path fill="#2444D8" d="M22 181L84 181L134 240V313Z"/>
+ <path fill="#B91379" d="M226 49V122L276 181H338Z"/>
+ <path fill="#096A96" d="M134 49L103 85L134 122L165 85Z"/>
+ <path fill="#E2248A" d="M226 240L195 277L226 313L257 277Z"/>
+ </g></g>
+ <g transform="translate(386 110) scale(1.38)"><g id="KYAU-custom-lettering-1" fill="#151629" fill-rule="evenodd">
+ <path d="M0 0H12V27H23L49 0H66L34 33L68 68H51L23 39H12V68H0Z"/>
+ <path transform="translate(91)" d="M0 0H15L35 27L56 0H71L41 39V68H29V39Z"/>
+ <path transform="translate(185)" d="M0 68L28 0H43L71 68H57L50 50H21L14 68Z M26 38H45L35.5 14Z"/>
+ <path transform="translate(281)" d="M0 0H12V48Q12 56 21 56H43Q52 56 52 48V0H64V49Q64 68 45 68H19Q0 68 0 49Z"/>
+</g></g>
+ <g id="board-day-name-seal" transform="translate(386 237)"><path fill="#D63D3B" d="M0 0H140V43H0Z"/><path fill="none" stroke="#FFF8EE" stroke-width="1" d="M3 3H137V40H3Z"/><g transform="translate(20 8) scale(.82)"><g fill="#FFF8EE">
+ <path d="M3 9H31L29 29L24 35H17V30H22L24 27L26 14H3Z M14 1H20L18 17L12 28L4 35L0 31L8 24L13 15Z"/>
+ <path transform="translate(46 0)" d="M27 0L31 4L18 17V35H12V22L3 28L0 23L12 16Z"/>
+ <path transform="translate(92 0)" d="M2 2H29V34H2V29H23V21H4V16H23V7H2Z"/>
+ </g></g></g>
+ <g id="board-day-ribbon-rule" fill="#151629">
+ <path opacity=".55" d="M545 254H833L821 263H545Z"/>
+ <path d="M845 254H862V263H833Z"/>
+ </g></g>
+<text x="142" y="574" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">PRECISE GEOMETRY. INTERWOVEN SYSTEMS.</text>
+<rect y="620" width="920" height="400" fill="#0D101B"/>
+<rect x="920" y="620" width="520" height="400" fill="#E5E4EF"/>
+<text x="48" y="664" fill="#A9ABBC" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="1.2">01 / DARK-BACKGROUND LOCKUP</text>
+<g id="reversed-lockup" transform="translate(50 674) scale(.9)"><defs><linearGradient id="board-night-main" gradientUnits="userSpaceOnUse" x1="60" y1="290" x2="280" y2="60"><stop stop-color="#4963FF"/><stop offset="1" stop-color="#47EDDC"/></linearGradient><linearGradient id="board-night-tail" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A835F3"/><stop offset="1" stop-color="#FF45B1"/></linearGradient></defs><g transform="translate(-7 28) scale(1.06 .88)"><g id="board-night-folded-knot" fill-rule="evenodd">
+ <path fill="url(#board-night-main)" d="M22 181L134 49L246 181L134 313Z M84 181L134 122L184 181L134 240Z"/>
+ <path fill="url(#board-night-tail)" d="M114 181L226 49L338 181L226 313Z M184 181L226 122L276 181L226 240Z"/>
+ <path fill="url(#board-night-main)" d="M134 49L246 181H184L134 122L103 85Z"/>
+ <path fill="#4963FF" d="M22 181L84 181L134 240V313Z"/>
+ <path fill="#A835F3" d="M226 49V122L276 181H338Z"/>
+ <path fill="#47EDDC" d="M134 49L103 85L134 122L165 85Z"/>
+ <path fill="#FF45B1" d="M226 240L195 277L226 313L257 277Z"/>
+ </g></g>
+ <g transform="translate(386 110) scale(1.38)"><g id="KYAU-custom-lettering-2" fill="#F1F3FF" fill-rule="evenodd">
+ <path d="M0 0H12V27H23L49 0H66L34 33L68 68H51L23 39H12V68H0Z"/>
+ <path transform="translate(91)" d="M0 0H15L35 27L56 0H71L41 39V68H29V39Z"/>
+ <path transform="translate(185)" d="M0 68L28 0H43L71 68H57L50 50H21L14 68Z M26 38H45L35.5 14Z"/>
+ <path transform="translate(281)" d="M0 0H12V48Q12 56 21 56H43Q52 56 52 48V0H64V49Q64 68 45 68H19Q0 68 0 49Z"/>
+</g></g>
+ <g id="board-night-name-seal" transform="translate(386 237)"><path fill="#D63D3B" d="M0 0H140V43H0Z"/><path fill="none" stroke="#FFF8EE" stroke-width="1" d="M3 3H137V40H3Z"/><g transform="translate(20 8) scale(.82)"><g fill="#FFF8EE">
+ <path d="M3 9H31L29 29L24 35H17V30H22L24 27L26 14H3Z M14 1H20L18 17L12 28L4 35L0 31L8 24L13 15Z"/>
+ <path transform="translate(46 0)" d="M27 0L31 4L18 17V35H12V22L3 28L0 23L12 16Z"/>
+ <path transform="translate(92 0)" d="M2 2H29V34H2V29H23V21H4V16H23V7H2Z"/>
+ </g></g></g>
+ <g id="board-night-ribbon-rule" fill="#F1F3FF">
+ <path opacity=".55" d="M545 254H833L821 263H545Z"/>
+ <path d="M845 254H862V263H833Z"/>
+ </g></g>
+<text x="962" y="664" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="1.2">02 / STANDALONE RIBBON</text>
+<defs><linearGradient id="board-icon-main" gradientUnits="userSpaceOnUse" x1="60" y1="290" x2="280" y2="60"><stop stop-color="#2444D8"/><stop offset="1" stop-color="#096A96"/></linearGradient><linearGradient id="board-icon-tail" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B91379"/><stop offset="1" stop-color="#E2248A"/></linearGradient></defs>
+<g id="standalone-wide-symbol" transform="translate(1008 682) scale(.954 .792)"><g id="board-icon-folded-knot" fill-rule="evenodd">
+ <path fill="url(#board-icon-main)" d="M22 181L134 49L246 181L134 313Z M84 181L134 122L184 181L134 240Z"/>
+ <path fill="url(#board-icon-tail)" d="M114 181L226 49L338 181L226 313Z M184 181L226 122L276 181L226 240Z"/>
+ <path fill="url(#board-icon-main)" d="M134 49L246 181H184L134 122L103 85Z"/>
+ <path fill="#2444D8" d="M22 181L84 181L134 240V313Z"/>
+ <path fill="#B91379" d="M226 49V122L276 181H338Z"/>
+ <path fill="#096A96" d="M134 49L103 85L134 122L165 85Z"/>
+ <path fill="#E2248A" d="M226 240L195 277L226 313L257 277Z"/>
+ </g></g>
+<text x="64" y="1067" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="1.5">COLOR / NIGHT PALETTE + SIGNATURE SEAL</text>
+<rect x="64" y="1085" width="197" height="34" fill="#151629" stroke="#CBCAD3" stroke-width=".5"/><text x="64" y="1142" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.2">INK</text><text x="64" y="1162" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="0.6">#151629</text><rect x="287" y="1085" width="197" height="34" fill="#4963FF" stroke="#CBCAD3" stroke-width=".5"/><text x="287" y="1142" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.2">ELECTRIC BLUE</text><text x="287" y="1162" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="0.6">#4963FF</text><rect x="510" y="1085" width="197" height="34" fill="#47EDDC" stroke="#CBCAD3" stroke-width=".5"/><text x="510" y="1142" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.2">CYAN</text><text x="510" y="1162" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="0.6">#47EDDC</text><rect x="733" y="1085" width="197" height="34" fill="#FF45B1" stroke="#CBCAD3" stroke-width=".5"/><text x="733" y="1142" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.2">MAGENTA</text><text x="733" y="1162" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="0.6">#FF45B1</text><rect x="956" y="1085" width="197" height="34" fill="#D63D3B" stroke="#CBCAD3" stroke-width=".5"/><text x="956" y="1142" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.2">VERMILION</text><text x="956" y="1162" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="0.6">#D63D3B</text><rect x="1179" y="1085" width="197" height="34" fill="#F5F3F0" stroke="#CBCAD3" stroke-width=".5"/><text x="1179" y="1142" fill="#151629" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.2">CHALK</text><text x="1179" y="1162" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="0.6">#F5F3F0</text>
+<path stroke="#CFD0D7" d="M64 1190H1376"/>
+<text x="64" y="1216" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.2">CUSTOM VECTOR LETTERING / UPRIGHT RIBBON GEOMETRY</text>
+<text x="928" y="1216" fill="#6A6B7C" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.2">LIGHT + DARK / ADAPTED CONTRAST</text>
+</svg>

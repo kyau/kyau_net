@@ -1,0 +1,38 @@
+{
+    "name": "kyau/kyau-net",
+    "description": "Source for kyau.net",
+    "type": "project",
+    "license": "AGPL-3.0-only",
+    "require": {
+        "php": ">=8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "KYAU\\Net\\": "backend/"
+        }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "pestphp/pest": "^5.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "lint": "find backend public tests -name '*.php' -print0 | xargs -0 -r -n1 php -l && php -l index.php",
+        "format": "php-cs-fixer fix",
+        "format:check": "php-cs-fixer fix --dry-run --diff",
+        "test": "pest",
+        "coverage": "pest --coverage --coverage-clover=build/clover.xml"
+    },
+    "scripts-descriptions": {
+        "lint": "Run PHP syntax checks over backend/, public/, tests/ and the root shim.",
+        "format": "Fix code style with PHP CS Fixer.",
+        "format:check": "Verify code style without modifying files.",
+        "test": "Run the Pest test suite.",
+        "coverage": "Run tests with Clover coverage written to build/clover.xml."
+    }
+}

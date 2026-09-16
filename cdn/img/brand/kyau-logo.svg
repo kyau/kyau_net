@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="360" viewBox="0 0 940 360"><title>KYAU — Folded Ribbon / カイヨ</title><defs><linearGradient id="for-dark-main" gradientUnits="userSpaceOnUse" x1="60" y1="290" x2="280" y2="60"><stop stop-color="#4963FF"/><stop offset="1" stop-color="#47EDDC"/></linearGradient><linearGradient id="for-dark-tail" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A835F3"/><stop offset="1" stop-color="#FF45B1"/></linearGradient></defs><g transform="translate(-7 28) scale(1.06 .88)"><g id="for-dark-folded-knot" fill-rule="evenodd">
+ <path fill="url(#for-dark-main)" d="M22 181L134 49L246 181L134 313Z M84 181L134 122L184 181L134 240Z"/>
+ <path fill="url(#for-dark-tail)" d="M114 181L226 49L338 181L226 313Z M184 181L226 122L276 181L226 240Z"/>
+ <path fill="url(#for-dark-main)" d="M134 49L246 181H184L134 122L103 85Z"/>
+ <path fill="#4963FF" d="M22 181L84 181L134 240V313Z"/>
+ <path fill="#A835F3" d="M226 49V122L276 181H338Z"/>
+ <path fill="#47EDDC" d="M134 49L103 85L134 122L165 85Z"/>
+ <path fill="#FF45B1" d="M226 240L195 277L226 313L257 277Z"/>
+ </g></g>
+ <g transform="translate(386 110) scale(1.38)"><g id="KYAU-custom-lettering-1" fill="#F1F3FF" fill-rule="evenodd">
+ <path d="M0 0H12V27H23L49 0H66L34 33L68 68H51L23 39H12V68H0Z"/>
+ <path transform="translate(91)" d="M0 0H15L35 27L56 0H71L41 39V68H29V39Z"/>
+ <path transform="translate(185)" d="M0 68L28 0H43L71 68H57L50 50H21L14 68Z M26 38H45L35.5 14Z"/>
+ <path transform="translate(281)" d="M0 0H12V48Q12 56 21 56H43Q52 56 52 48V0H64V49Q64 68 45 68H19Q0 68 0 49Z"/>
+</g></g>
+ <g id="for-dark-name-seal" transform="translate(386 237)"><path fill="#D63D3B" d="M0 0H140V43H0Z"/><path fill="none" stroke="#FFF8EE" stroke-width="1" d="M3 3H137V40H3Z"/><g transform="translate(20 8) scale(.82)"><g fill="#FFF8EE">
+ <path d="M3 9H31L29 29L24 35H17V30H22L24 27L26 14H3Z M14 1H20L18 17L12 28L4 35L0 31L8 24L13 15Z"/>
+ <path transform="translate(46 0)" d="M27 0L31 4L18 17V35H12V22L3 28L0 23L12 16Z"/>
+ <path transform="translate(92 0)" d="M2 2H29V34H2V29H23V21H4V16H23V7H2Z"/>
+ </g></g></g>
+ <g id="for-dark-ribbon-rule" fill="#F1F3FF">
+ <path opacity=".55" d="M545 254H833L821 263H545Z"/>
+ <path d="M845 254H862V263H833Z"/>
+ </g></svg>

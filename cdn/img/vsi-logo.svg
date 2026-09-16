@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VSI">
+  <defs>
+    <linearGradient id="redline" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF304A"/>
+      <stop offset="1" stop-color="#E40521"/>
+    </linearGradient>
+    <style>
+      .ink { color: #F4F4F2; }
+      .dial { color: #59606B; }
+      @media (prefers-color-scheme: light) {
+        .ink { color: #14161A; }
+        .dial { color: #747B86; }
+      }
+    </style>
+  </defs>
+
+  <!-- Tachometer dial, left open at the bottom to frame the V. -->
+  <g class="dial" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" opacity=".55">
+    <path d="M7.5 39.6 11.1 38.6 M6.4 34.6 10.1 34.2 M6.3 29.4 10 29.8 M7.2 24.3 10.8 25.3 M9.1 19.6 12.4 21.2 M11.9 15.3 14.8 17.5 M15.5 11.5 18 14.3 M19.8 8.7 21.7 12 M24.5 6.8 25.8 10.4 M29.6 5.8 30.2 9.5 M34.8 5.8 34.5 9.5 M39.9 6.8 38.9 10.4 M44.7 8.7 43 12 M49 11.5 46.6 14.3 M52.6 15.3 49.7 17.5 M55.4 19.6 52.1 21.2 M57.3 24.3 53.7 25.3 M58.2 29.4 54.5 29.8 M58.1 34.6 54.4 34.2 M57 39.6 53.4 38.6"/>
+  </g>
+
+  <!-- Redline zone from the original gauge. -->
+  <path d="M44.1 9.2 A27 27 0 0 1 56.6 25.8" fill="none" stroke="url(#redline)"
+        stroke-width="4.2" stroke-linecap="butt"/>
+
+  <!-- Heavier geometric V: both legs are straight. -->
+  <path d="M17.2 18.5 L31.8 48.2" fill="none" class="ink"
+        stroke="currentColor" stroke-width="8.5" stroke-linecap="round"/>
+  <path d="M31.8 48.2 L42.2 22.2" fill="none" stroke="url(#redline)"
+        stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="31.8" cy="48.2" r="4.3" class="ink" fill="currentColor"/>
+</svg>

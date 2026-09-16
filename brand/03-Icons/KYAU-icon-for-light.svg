@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="320" viewBox="0 0 400 320"><title>KYAU — Folded Ribbon / カイヨ</title><defs><linearGradient id="icon-for-light-main" gradientUnits="userSpaceOnUse" x1="60" y1="290" x2="280" y2="60"><stop stop-color="#2444D8"/><stop offset="1" stop-color="#096A96"/></linearGradient><linearGradient id="icon-for-light-tail" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B91379"/><stop offset="1" stop-color="#E2248A"/></linearGradient></defs><g transform="translate(9 1) scale(1.06 .88)"><g id="icon-for-light-folded-knot" fill-rule="evenodd">
+ <path fill="url(#icon-for-light-main)" d="M22 181L134 49L246 181L134 313Z M84 181L134 122L184 181L134 240Z"/>
+ <path fill="url(#icon-for-light-tail)" d="M114 181L226 49L338 181L226 313Z M184 181L226 122L276 181L226 240Z"/>
+ <path fill="url(#icon-for-light-main)" d="M134 49L246 181H184L134 122L103 85Z"/>
+ <path fill="#2444D8" d="M22 181L84 181L134 240V313Z"/>
+ <path fill="#B91379" d="M226 49V122L276 181H338Z"/>
+ <path fill="#096A96" d="M134 49L103 85L134 122L165 85Z"/>
+ <path fill="#E2248A" d="M226 240L195 277L226 313L257 277Z"/>
+ </g></g></svg>
